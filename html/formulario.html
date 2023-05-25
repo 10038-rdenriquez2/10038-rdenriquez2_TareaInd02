@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<style>
+	*{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #DEDEDE;
+  display: flex;
+  min-height: 100vh;
+}
+
+form{
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background: #F3F3F3;
+  padding: 30px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: (0,0,0,0.5);
+}
+
+input{
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+input[type=submit]{
+  background: linear-gradient(#FFDA63, #FFB940);
+  border:0;
+  color: brown;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+input[type=submit]:active{
+  transform: scale(0.95);
+}
+
+/* RESPONSIVE */
+@media(max-width:780px){
+  form{
+    width: 95%;
+  }
+}
+	
+</style>
+
+<body>
+
+	<form>
+		<h2><b>Formulario de Login</b></h2>
+
+		<input type="text" name="usuario" id="usuario" placeholder="&#9000; Usuario" required>
+    <input type="password" name="contraseña" id="contraseña" placeholder="&#128272; Contraseña" required>
+
+		<input type="submit" name="enviar" value="Ingresar" id="enviar">
+
+	</form>
+
+  <script src="../js/validacion.js"></script>
+
+</body>
+</html>
